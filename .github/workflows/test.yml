@@ -10,20 +10,14 @@ on:
 
 jobs:
   test:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os:
-          - ubuntu-latest
-          - windows-latest
-        node: [12.x, 14.x, 16.x]
-
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Set up Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node }}
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
       - name: Install modules
         run: npm install
       - name: Run tests
