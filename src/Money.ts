@@ -1,14 +1,18 @@
 import Big from 'big.js'
 
 export class Money {
-    private readonly _amount: Big
+    private readonly amount: Big
 
     private constructor(amount: Big) {
-        this._amount = amount
+        this.amount = amount
     }
 
-    get amount(): Big {
-        return this._amount
+    toBigDecimal(): Big {
+        return this.amount
+    }
+
+    toNumber(): number {
+        return this.amount.toNumber()
     }
 
     plus(other: Money): Money {
@@ -68,17 +72,23 @@ export class Money {
     }
 
     toString(): string {
-        if (this.isNegative()) return '-$' + this._amount.abs().toString()
+        if (this.isNegative()) return '-$' + this.amount.abs().toString()
         return '$' + this.plainString()
     }
 
     plainString(): string {
-        return this._amount.toString()
+        return this.amount.toString()
     }
 
-    format(decimalPrecision: number = 2, groupSeparator: string = ',', decimalSeparator: string = '.', symbol: string = '$'): string {
-        const valueWithDecimals = Number(this._amount.abs().toFixed(decimalPrecision))
-            .toLocaleString('en', { useGrouping: false, maximumFractionDigits: decimalPrecision, minimumFractionDigits: 0 })
+    format(
+        decimalPrecision: number = 2,
+        groupSeparator: string = ',',
+        decimalSeparator: string = '.',
+        symbol: string = '$',
+        showDecimalsIfZero: boolean = false,
+    ): string {
+        const valueWithDecimals = Number(this.amount.abs().toFixed(decimalPrecision))
+            .toLocaleString('en', { useGrouping: false, maximumFractionDigits: decimalPrecision, minimumFractionDigits: showDecimalsIfZero ? decimalPrecision : 0 })
         const parts = valueWithDecimals.split('.')
         parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, groupSeparator)
         const formatted = parts.join(decimalSeparator)

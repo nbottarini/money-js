@@ -85,3 +85,12 @@ it('format returns a string representation of the money with group and decimal s
 it('format with custom symbol', () => {
     expect(Money.of('$15000.231').format(2, ',', '.', 'USD ')).toEqual('USD 15,000.23')
 })
+
+it('format showing decimals if zero', () => {
+    expect(Money.of('$15000.000').format(2, ',', '.', '$', true)).toEqual('$15,000.00')
+})
+
+it('toNumber converts money to number', () => {
+    expect(Money.of('$15.12').toNumber()).toEqual(15.12)
+    expect(Money.of('$156.667').toNumber()).toEqual(156.667)
+})

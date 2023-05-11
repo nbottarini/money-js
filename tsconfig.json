@@ -26,5 +26,5 @@
     "outDir": "./dist",
     "isolatedModules": true,
   },
-  "include": ["src"]
+  "include": ["src", "test"]
 }
