@@ -2059,6 +2059,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nbottarini/javascript-extensions@npm:^0.7.1":
+  version: 0.7.1
+  resolution: "@nbottarini/javascript-extensions@npm:0.7.1"
+  checksum: 35fbd0862e6bb480986117fa0f4a872f308cfa0185ab9a98d0115a3aa2405bcd7d91daee68601df85c280493c760f2042a5987841c541b2817f0a58130b16bf4
+  languageName: node
+  linkType: hard
+
 "@nbottarini/money@workspace:.":
   version: 0.0.0-use.local
   resolution: "@nbottarini/money@workspace:."
@@ -2066,6 +2073,7 @@ __metadata:
     "@babel/core": ^7.22.10
     "@babel/preset-env": ^7.22.10
     "@babel/preset-typescript": ^7.22.5
+    "@nbottarini/javascript-extensions": ^0.7.1
     "@rollup/plugin-commonjs": ^25.0.3
     "@rollup/plugin-node-resolve": ^15.1.0
     "@rollup/plugin-terser": ^0.4.3
@@ -2073,7 +2081,6 @@ __metadata:
     "@types/jest": ^29.5.3
     "@typescript-eslint/eslint-plugin": ^6.3.0
     "@typescript-eslint/parser": ^6.3.0
-    asimov-javascript-extensions: ^0.5.2
     babel-jest: ^29.6.2
     big.js: ^6.2.1
     eslint: ^8.46.0
@@ -2683,13 +2690,6 @@ __metadata:
   version: 2.1.0
   resolution: "array-union@npm:2.1.0"
   checksum: 5bee12395cba82da674931df6d0fea23c4aa4660cb3b338ced9f828782a65caa232573e6bf3968f23e0c5eb301764a382cef2f128b170a9dc59de0e36c39f98d
-  languageName: node
-  linkType: hard
-
-"asimov-javascript-extensions@npm:^0.5.2":
-  version: 0.5.4
-  resolution: "asimov-javascript-extensions@npm:0.5.4"
-  checksum: a23487310704766ac65dd46b5bc660bb2f81ffa1ad7461e13a5ec8448c217c3d752d1a060733af7fd122c6ada82f34ab97788a87db111a9b38b3308290917c04
   languageName: node
   linkType: hard
 

@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/@nbottarini/money-js.svg)](https://www.npmjs.com/package/@nbottarini/money-js)
+[![npm](https://img.shields.io/npm/v/@nbottarini/money.svg)](https://www.npmjs.com/package/@nbottarini/money)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![CI Status](https://github.com/nbottarini/money-js/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/nbottarini/money-js/actions)
 

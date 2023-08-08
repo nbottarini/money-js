@@ -1,4 +1,4 @@
-import 'asimov-javascript-extensions'
+import '@nbottarini/javascript-extensions'
 import './test/testing/jestExtensions'
 import * as matchers from 'jest-extended'
 

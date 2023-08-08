@@ -1,6 +1,6 @@
 {
   "name": "@nbottarini/money",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Money type with arbitrary-precision decimal arithmetic",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -28,7 +28,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "asimov-javascript-extensions": "^0.5.2",
+    "@nbottarini/javascript-extensions": "^0.7.1",
     "big.js": "^6.2.1"
   },
   "devDependencies": {

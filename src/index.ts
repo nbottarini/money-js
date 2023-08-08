@@ -1,3 +1,3 @@
-import 'asimov-javascript-extensions'
+import '@nbottarini/javascript-extensions'
 
 export { Money } from './Money'
