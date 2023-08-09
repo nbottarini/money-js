@@ -1,9 +1,10 @@
 {
   "name": "@nbottarini/money",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "Money type with arbitrary-precision decimal arithmetic",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "browser": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
   "react-native": "dist/esm/index.js",
   "author": "Nicolás Bottarini <nicolasbottarini@gmail.com>",
