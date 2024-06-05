@@ -92,7 +92,7 @@ export class Money {
         const parts = valueWithDecimals.split('.')
         parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, groupSeparator)
         const formatted = parts.join(decimalSeparator)
-        if (!symbol) return formatted
+        if (!symbol) return this.isNegative() ? '-' + formatted : formatted
         if (this.isNegative()) return '-' + symbol + formatted
         return symbol + formatted
     }

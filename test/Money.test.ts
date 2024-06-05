@@ -86,6 +86,11 @@ it('format with custom symbol', () => {
     expect(Money.of('$15000.231').format(2, ',', '.', 'USD ')).toEqual('USD 15,000.23')
 })
 
+it('format without symbol', () => {
+    expect(Money.of('$15000.231').format(2, ',', '.', '')).toEqual('15,000.23')
+    expect(Money.of('-15000.231').format(2, ',', '.', '')).toEqual('-15,000.23')
+})
+
 it('format showing decimals if zero', () => {
     expect(Money.of('$15000.000').format(2, ',', '.', '$', true)).toEqual('$15,000.00')
 })

@@ -1,6 +1,6 @@
 {
   "name": "@nbottarini/money",
-  "version": "0.9.6",
+  "version": "0.9.7",
   "description": "Money type with arbitrary-precision decimal arithmetic",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
