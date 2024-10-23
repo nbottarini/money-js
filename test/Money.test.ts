@@ -1,5 +1,4 @@
-import Big from 'big.js'
-import { Money } from '../src'
+import { Big, Money } from '../src'
 
 it('Money can be initialized from a string', () => {
     expect(Money.of('100.42')).toObjEquals(Money.of('$100.42'))
